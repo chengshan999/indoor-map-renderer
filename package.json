@@ -1,0 +1,52 @@
+{
+  "name": "@visionnav/render_map",
+  "version": "2.18.6",
+  "description": "vnl地图渲染类",
+  "main": "./src/canvas/Index.ts",
+  "scripts": {
+    "link": "npm link",
+    "dev": "vite"
+  },
+  "keywords": [
+    "raphael",
+    "panzoom",
+    "vnl",
+    "map",
+    "renderer",
+    "pixi.js",
+    "canvas",
+    "webGL",
+    "webGPU"
+  ],
+  "author": "zhanglei",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://10.10.20.172:4873/"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "localforage": "^1.10.0",
+    "panzoom": "^9.4.3",
+    "pixi.js": "^8.1.8",
+    "raphael": "^2.3.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^20.11.30",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.2.2",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "vue-tsc": "^2.0.7"
+  }
+}

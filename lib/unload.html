@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image to Base64</title>
+</head>
+<body>
+  <input type="file" id="imageInput" accept="image/*">
+  <div id="imageContainer"></div>
+  <p id="pElement"></p>
+
+  <script>
+    const imageInput = document.getElementById('imageInput');
+    const imageContainer = document.getElementById('imageContainer');
+
+    const imgObj = {}
+
+    imageInput.addEventListener('change', function() {
+      const file = this.files[0];
+      const reader = new FileReader();
+      console.log('file', file)
+
+      reader.onload = function(e) {
+        const base64String = e.target.result;
+        const imgElement = document.createElement('img');
+        imgElement.src = base64String;
+        imageContainer.innerHTML = '';
+        imageContainer.appendChild(imgElement);
+        document.getElementById('pElement').innerHTML = base64String
+        imgObj[file.name] = base64String
+        console.log(imgObj)
+      }
+
+      reader.readAsDataURL(file);
+    });
+  </script>
+</body>
+</html>
