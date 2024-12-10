@@ -1,3 +1,5 @@
-# visionnav_render_map
+# map_renderer
 
-地图渲染类，代码库
+地图渲染、AGV动画库
+
+![Example](/vue/images/agv-animation.gif)
